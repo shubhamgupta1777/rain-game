@@ -95,7 +95,7 @@ const RainGrid = (props) => {
     }, config.fallSpeed);
 
     return () => clearInterval(interval);
-  }, [config.isRunning, config.fallSpeed, config.rows, config.cols]);
+  }, [config.isRunning, config.fallSpeed, config.rows, config.cols, config.dropLength, config.dropChance]);
 
 
   useEffect(() => {
