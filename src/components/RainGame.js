@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from "react";
 import RainGrid from "./RainGrid";
-import styles from "../style/RainGame.css";
+import "../style/RainGame.css";
 
 const RainGame = () => {
   const [fallSpeed, setFallSpeed] = useState(50);
-  const [rows, setRows] = useState(15);
-  const [cols, setCols] = useState(20);
+  const [rows, setRows] = useState(20);
+  const [cols, setCols] = useState(50);
   const [isRunning, setIsRunning] = useState(false);
   const [resetKey, setResetKey] = useState(0);
 
