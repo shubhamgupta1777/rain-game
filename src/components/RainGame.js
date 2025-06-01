@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from "react";
+import { useState } from "react";
 import RainGrid from "./RainGrid";
-import styles from "../style/RainGame.css";
+import "../style/RainGame.css";
 
 const RainGame = () => {
   const [fallSpeed, setFallSpeed] = useState(50);
@@ -42,7 +42,7 @@ const RainGame = () => {
               value={fallSpeed}
               onChange={(e) => setFallSpeed(Number(e.target.value))}
             >
-              {Array.from({ length: 10 }, (_, i) => 10 + i*10 ).map((num) => (
+              {Array.from({ length: 10 }, (_, i) => 10 + i * 10).map((num) => (
                 <option key={num} value={num}>
                   {num}
                 </option>
@@ -56,7 +56,7 @@ const RainGame = () => {
               value={rows}
               onChange={(e) => setRows(Number(e.target.value))}
             >
-              {Array.from({ length: 20 }, (_, i) => i+1).map((num) => (
+              {Array.from({ length: 20 }, (_, i) => i + 1).map((num) => (
                 <option key={num} value={num}>
                   {num}
                 </option>

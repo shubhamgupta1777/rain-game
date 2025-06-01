@@ -123,8 +123,8 @@ const RainGrid = (props) => {
   ]);
 
   return (
-    <div>
-        <div
+    <div style={{display:"flex", justifyContent: "center", alignContent: "center"}}>
+        <div className="container"
           style={{
             display: "grid",
             gridTemplateRows: `repeat(${config.rows}, ${config.cellSize}px)`,
